@@ -15,7 +15,7 @@ results! Let's prove it to ourselves! But take this as an important fact:
 ***Programming is the art of helping a computer decide which expressions to
 evaluate and in which order.***
 
-Believe it or not, the est of your programming career will be learning to make
+Believe it or not, the rest of your programming career will be learning to make
 your messages to Ruby, and other programmers, as clear and efficient as
 possible. That's the name of the game for this career ***and you're doing it
 now!***  
@@ -55,6 +55,7 @@ This produces:
 Change just a few variables and you get an entirely different scenario:
 
 ```ruby
+# Input values: We could easily imagine asking a user for these values.
 name = "Byron the Poodle"
 rain_percentage = 0.8
 temperature_in_c = 26
