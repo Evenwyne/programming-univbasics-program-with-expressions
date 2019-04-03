@@ -63,14 +63,59 @@ temperature_in_c = 26
 likely_to_rain = rain_percentage > 0.30
 sun_is_dangerous = temperature_in_c >= 26
 
-"Hello, #{name}, with a rain chance of #{rain_percentage * 100}% and a temperature of #{temperature_in_c}C we recommend that you " + (likely_to_rain ? "take an umbrella" : "enjoy this rain-free day") +
-"#{sun_is_dangerous ? ' and watch out for heat stroke!' : ' and fine weather.'}"
+"Hello, #{name}! With a rain chance of #{rain_percentage * 100}% and a temperature of #{temperature_in_c}C we recommend that you " + (likely_to_rain ? "take an umbrella" : "enjoy this rain-free day") +
+"#{sun_is_dangerous ? ' and watch out for heat stroke!' : ' and bask in this fine weather.'}"
 ```
 
 This produces:
 
 ```text
-=> "Hello, Byron the Poodle, with a rain chance of 80.0% and a temperature of 26C we recommend that you take an umbrella and watch out for heat stroke!"
+=> "Hello, Byron the Poodle! With a rain chance of 80.0% and a temperature of 26C we recommend that you take an umbrella and watch out for heat stroke!"
+```
+
+As a finishing bit of advice let us share an important truth about programming
+with you: ***Just because code works, doesn't mean that it communicates well;
+and therefore it's not "good"*** In our example that last `String` is _valid_,
+Ruby understands what to do and does it! But is that a fun line of code to
+read? Is it what you want to show your colleague or your boss or yourself 3
+months from now. Make sure to always make your code as clean as possible.
+You'll learn more techniques to do this in the coming lessons, but let's
+rewrite this code into something we can be proud of.
+
+```ruby
+# Input values: We could easily imagine asking a user for these values.
+name = "Byron the Poodle"
+rain_percentage = 0.8
+temperature_in_c = 26
+
+likely_to_rain = rain_percentage > 0.30
+sun_is_dangerous = temperature_in_c >= 26
+
+rain_message = likely_to_rain ? "take an umbrella" : "enjoy this rain-free day"
+sun_message = sun_is_dangerous ? ' and watch out for heat stroke!' : ' and bask in this fine weather.'
+
+"Hello, #{name}! With a rain chance of #{rain_percentage * 100}% and a temperature of #{temperature_in_c}C we recommend that you #{rain_message} #{sun_message}"
+```
+
+Wait a second, notice how weird it feels to not know how `#{rain_message}` and
+`#{sun_message}` connect? We should pull the `"and"` out of `sun_message`.
+Programming is all in the details. Take time to always have clean, readable
+code. Here's our final implementation:
+
+```ruby
+# Input values: We could easily imagine asking a user for these values.
+name = "Byron the Poodle"
+rain_percentage = 0.8
+temperature_in_c = 26
+
+likely_to_rain = rain_percentage > 0.30
+sun_is_dangerous = temperature_in_c >= 26
+
+rain_message = likely_to_rain ? "take an umbrella" : "enjoy this rain-free day"
+sun_message = sun_is_dangerous ? ' watch out for heat stroke!' : ' bask in this
+fine weather.'
+
+"Hello, #{name}! With a rain chance of #{rain_percentage * 100}% and a temperature of #{temperature_in_c}C we recommend that you #{rain_message} and #{sun_message}"
 ```
 
 ## Conclusion
