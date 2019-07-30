@@ -12,13 +12,18 @@ perspective, mute and unable to interact, and now you can converse with Ruby.
 Not only that, but you can ask Ruby to respond with some very sophisticated
 results! Let's prove it to ourselves! But take this as an important fact:
 
-***Programming is the art of helping a computer decide which expressions to
-evaluate and in which order.***
+***Programming is the art documenting problem-solving strategies in a way that
+helps a computer decide which expressions to evaluate and in which order.***
 
-Believe it or not, the rest of your programming career will be learning to make
-your messages to Ruby, and other programmers, as clear and efficient as
-possible. That's the name of the game for this career ***and you're doing it
-now!***  
+The rest of this lesson is a code along. Key these programs into IRB and verify
+our text for yourself. Students who are most successful in this program then
+try to make similar style programs for themselves. Programmers usually call
+this "playing with the code." Try swapping out a conditional expression, try
+nesting a ternary within a ternary. Try to bring all the skills you've learned
+in this module to play with you in this lesson. You won't regret the
+investment. Incidentally, doing this exact work is how most programmers orient
+themselves to a new language. Having the skill of the skill of getting started
+in a new language is a career-launching capability.
 
 ## Write a Program with Conditional Logic Using Evaluation Expressions Only
 
