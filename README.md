@@ -49,7 +49,7 @@ sun_is_dangerous = temperature_in_c >= 26
 This produces:
 
 ```text
-=> "Hello Your name here with a rain chance of 20.0% and a\ntemperature of 26C we recommend that you enjoy this rain free day and watch out for heat stroke"
+=> "Hello Your name here with a rain chance of 20.0% and a temperature of 26C we recommend that you enjoy this rain free day and watch out for heat stroke"
 ```
 
 Change just a few variables and you get an entirely different scenario:
