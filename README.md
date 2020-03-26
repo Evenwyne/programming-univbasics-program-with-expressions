@@ -11,7 +11,7 @@ perspective, mute and unable to interact, and now you can converse with Ruby.
 
 We hope you've _experienced_ that:
 
-***Programming is the art documenting problem-solving strategies in a way that
+***Programming is the art of documenting problem-solving strategies in a way that
 helps a computer decide which expressions to evaluate and in which order.***
 
 The rest of this lesson is a code along. Key these programs into IRB and verify
@@ -60,7 +60,7 @@ puts "Hello, #{name}, with a rain chance of #{rain_percentage * 100}% and a temp
 This produces:
 
 ```text
-=> "Hello Your name here with a rain chance of 20.0% and a temperature of 26C we recommend that you enjoy this rain-free day and watch out for heatstroke"
+=> "Hello, Your name here, with a rain chance of 20.0% and a temperature of 26C we recommend that you enjoy this rain-free day and watch out for heatstroke!"
 ```
 
 Change just a few variables and you get an entirely different scenario:
@@ -86,10 +86,10 @@ This produces:
 
 As a finishing bit of advice let us share an important truth about programming
 with you: ***Just because code works, doesn't mean that it communicates well;
-and therefore it's not "good"*** In our example that last `String` is _valid_,
+and therefore it's not "good."*** In our example that last `String` is _valid_,
 Ruby understands what to do and does it! But is that a fun line of code to
 read? Is it what you want to show your colleague or your boss or yourself 3
-months from now. Make sure to always make your code as clean as possible.
+months from now? Make sure to always make your code as clean as possible.
 You'll learn more techniques to do this in the coming lessons, but let's
 rewrite this code into something we can be proud of.
 
@@ -103,9 +103,9 @@ likely_to_rain = rain_percentage > 0.30
 sun_is_dangerous = temperature_in_c >= 26
 
 rain_message = likely_to_rain ? "take an umbrella" : "enjoy this rain-free day"
-sun_message = sun_is_dangerous ? ' and watch out for heatstroke!' : ' and bask in this fine weather.'
+sun_message = sun_is_dangerous ? 'and watch out for heatstroke!' : 'and bask in this fine weather.'
 
-"Hello, #{name}! With a rain chance of #{rain_percentage * 100}% and a temperature of #{temperature_in_c}C we recommend that you #{rain_message} #{sun_message}"
+puts "Hello, #{name}! With a rain chance of #{rain_percentage * 100}% and a temperature of #{temperature_in_c}C we recommend that you #{rain_message} #{sun_message}"
 ```
 
 Notice how weird it feels to not know how `#{rain_message}` and
@@ -123,10 +123,10 @@ likely_to_rain = rain_percentage > 0.30
 sun_is_dangerous = temperature_in_c >= 26
 
 rain_message = likely_to_rain ? "take an umbrella" : "enjoy this rain-free day"
-sun_message = sun_is_dangerous ? ' watch out for heatstroke!' : ' bask in this
+sun_message = sun_is_dangerous ? 'watch out for heatstroke!' : 'bask in this
 fine weather.'
 
-"Hello, #{name}! With a rain chance of #{rain_percentage * 100}% and a temperature of #{temperature_in_c}C we recommend that you #{rain_message} and #{sun_message}"
+puts "Hello, #{name}! With a rain chance of #{rain_percentage * 100}% and a temperature of #{temperature_in_c}C we recommend that you #{rain_message} and #{sun_message}"
 ```
 
 ## Conclusion
