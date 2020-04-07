@@ -14,13 +14,13 @@ We hope you've _experienced_ that:
 ***Programming is the art of documenting problem-solving strategies in a way that
 helps a computer decide which expressions to evaluate and in which order.***
 
-This lesson first includes a video review of some of the concepts we've learned so far. 
-After the video, this lesson walks through the development of a small program. Key the
-code snippets into IRB and verify the code as you read.
+This lesson first includes a video review of the key concepts we've learned so far. 
+After the video, this lesson walks through the development of a small program. Type the
+provided code snippets into IRB and verify the code as you read.
 
 ## Video Review: Variables
 
-Check out this video for a quick review of creating variables and using IRB.
+Check out this video for a review of creating and using variables in IRB:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0FHgtMRrKGs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
