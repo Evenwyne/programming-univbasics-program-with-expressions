@@ -24,6 +24,8 @@ Check out this video for a review of creating and using variables in IRB:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0FHgtMRrKGs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+[Variables](https://youtu.be/0FHgtMRrKGs)
+
 ## Write a Program with Conditional Logic Using Evaluation Expressions Only
 
 Recall when we introduced the ternary expression, we wrote this little program:
